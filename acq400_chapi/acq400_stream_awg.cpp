@@ -67,10 +67,10 @@ int main(int argc, char **argv) {
 	printf("port set %d\n", port);
 
 	if (argc > 2){
-		int i1 = 2;
-		if (strcmp(argv[2], "repeat") == 0){
+		int i1 = 1;
+		if (strcmp(argv[1], "repeat") == 0){
 			if (argc > 3){
-				i1 = 3;
+				i1 = 2;
 				repeat = true;
 			}else{
 				fprintf(stderr, "ERROR: repeat only supported with file\n");
